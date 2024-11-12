@@ -1,0 +1,15 @@
+{
+  "name": "bdd-tests-project",
+  "version": "1.0.0",
+  "description": "A sample project for BDD tests using Node.js and @cucumber/cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --format @cucumber/pretty-formatter"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "chai": "^4.3.4",
+    "mocha": "^10.0.0"
+  }
+}
