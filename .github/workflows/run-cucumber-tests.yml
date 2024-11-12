@@ -1,0 +1,30 @@
+name: Run Cucumber Tests with Puppeteer
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to main branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow on pull requests to main branch
+
+jobs:
+  cucumber-tests:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Use a specific Node.js version, or change to your required version
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Run Cucumber tests
+        run: |
+          npm test  # Or use 'npx cucumber-js' if npm test isn't set up
