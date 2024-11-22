@@ -4,6 +4,7 @@
   "description": "A sample project for BDD tests using Node.js and @cucumber/cucumber.",
   "main": "index.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "cucumber-js --format @cucumber/pretty-formatter"
   },
   "devDependencies": {
@@ -12,5 +13,9 @@
     "chai": "^4.5.0",
     "mocha": "^10.0.0",
     "puppeteer": "^23.7.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.1"
   }
 }

@@ -1,0 +1,6 @@
+{
+    "default": {
+      "require": ["test/hooks.js", "features/step_definitions/**/*.js"],
+      "format": ["progress"]
+    }
+}
