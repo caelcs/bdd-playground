@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "test": "cucumber-js --format @cucumber/pretty-formatter"
+    "test": "cucumber-js e2e/ --format @cucumber/pretty-formatter"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^9.6.0",
